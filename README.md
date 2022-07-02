@@ -6,6 +6,7 @@ In my data science learning journey, I set a goal to really understand the funda
 
 In this article, I will discuss:
 - How to make sense of variance by using visuals
+- Why variance calculation uses squares
 - Why population variance and sample variance have different denominators
 - Write a variance function from scratch
 
@@ -48,6 +49,30 @@ df.head(7)
 For simplicity we will exclusively use the first column of the data, but the process is the same! By visualizing the distribution of sepal length, we see that is pretty much normally distributed with a mean of around 5.8 cm.
 
 ![Distribution of sepal length](/assets/output.png)
+
+
+The first step to calculate variance is finding the distance between each data point and the mean. Consider a flower of a 4.8cm sepal length. This data point is two centimetres away from the mean (5.8 cm). If we calculate the square of the difference, those two specific points (the sepal length and mean) will form a square, and the square of the distance between them is the area under the shaded square!
+
+![Square of the distance](/assets/diff_square.png)
+
+Why do we square the difference?
+
+- To penalize the outliers more than the data points closer to the mean
+- To prevent the distances above the mean  to cancel out with those below, which would result in a variance of zero
+
+
+After repeating the same process for each data point to find the area of the square, which represents the squared distance from the mean, we can plot the distribution of squared differences below. Note that I immediately calculated and plotted the mean of the squared differences, which is the **Variance**.
+
+
+![image](/assets/squared_diff.png)
+
+
+
+
+
+
+
+
 
 
 
