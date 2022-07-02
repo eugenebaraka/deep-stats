@@ -6,15 +6,12 @@ If you have been working with data for a while, you (probably and hopefully) kno
 
 The variance can be calculated as 
 
-<img src="https://render.githubusercontent.com/render/math?math={\begin{align}
-\text{Var}(X) &= \frac{1}{n}\left((x_1-\bar{x})^2+(x_2-\bar{x})^2+\ldots+(x_n-\bar{x})^2\right) \\
-&= \frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})^2
-\end{align}}">
 
-$\begin{align}
-\text{Var}(X) &= \frac{1}{n}\left((x_1-\bar{x})^2+(x_2-\bar{x})^2+\ldots+(x_n-\bar{x})^2\right) \\
-&= \frac{1}{n}\sum_{i=1}^n (x_i-\bar{x})^2
-\end{align}$
+[INSERER LA FORMULE]
+
+Let's use a python's built in dataset to break down this formula:
+
+
 
 Variance is a numerical value that explains how far away data points are from the mean, and hence from each other. 
 - A variance of zero means all data is similar (we have only one data point)
