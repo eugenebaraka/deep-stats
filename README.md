@@ -22,6 +22,11 @@ The variance is calculated as
 
 ![variance](/assets/var.png)
 
+Where,
+x_i is the ith value in the data set;
+µ is the population mean;
+N is the number of values.
+
 Let's use python's scikit-learn built-in dataset, the Iris dataset, to break down this formula. Please find the full notebook on my [github](/variance.ipynb)
 
 We will import all necessary libraries first:
@@ -68,6 +73,11 @@ Our goal is for the variation in our sample (sample variance) to estimate the va
 After correcting for the bias, the formula becomes:
 
 ![sample variance](/assets/sample_var.png)
+
+where, 
+x_i is the ith value in the data set;
+x̄ is the sample mean;
+n is the number of observations;
 
 Note that the formula is the almost the same as that of population variance except that we take n minus one degree of freedom as the denominator for the sample variance. 
 
