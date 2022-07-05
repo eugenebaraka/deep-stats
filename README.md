@@ -7,6 +7,6 @@ Here is the list of the analyses done so far
 
 | Topic      | Jupyter notebook | Blog post
 | ----------- | ----------- |---------------|
-| Variance      | [Here](/assets/variance.ipynb) | [Understanding Population Variance and Sample Variance Formulas](https://eugenebaraka.github.io/blog/2022/07/03/variance-explained/)|
+| Variance      | [Here](/variance.ipynb) | [Understanding Population Variance and Sample Variance Formulas](https://eugenebaraka.github.io/blog/2022/07/03/variance-explained/)|
 
 
